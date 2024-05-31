@@ -1,0 +1,22 @@
+enum ExprKind{
+  EXPR_ADD,
+  EXPR_MUL,
+
+  EXPR_INTEGER
+};
+
+struct Expr{
+  kind: ExprKind;
+  left, right: ->Expr;
+  decimal: u64;
+};
+
+//constructor
+extern fn createBinaryExpr(kind: ExprKind, left: ->Expr, right: ->Expr): ->Expr;
+extern fn createIntegerExpr(val: u64): ->Expr;
+
+//destuctor
+extern fn releaseExpr(expr: ->Expr);
+
+//methods
+extern fn printExprTree(expr: ->Expr);
