@@ -1,0 +1,11 @@
+@ <stdio.hdr>
+@ "lexer.hdr"
+
+// -- simple test
+
+fn main()
+{
+  while (getToken() != EOI) {
+    printf("%u.%u: %s (%s)\n", token.pos.row, token.pos.col, tokenKindStr(token.kind), token.val);
+  }
+}
