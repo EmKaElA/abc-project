@@ -5,10 +5,10 @@ fn main(){
   local expr: -> Expr;
 
   expr = createBinaryExpr(
-    EXPR_ADD,
+    EXPR_SUB,
 
     createBinaryExpr(
-      EXPR_MUL,
+      EXPR_DIV,
       createIntegerExpr((string)"2"),
       createIntegerExpr((string)"3")
       ),

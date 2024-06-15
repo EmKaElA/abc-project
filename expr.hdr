@@ -1,10 +1,16 @@
 @ "string.hdr"
 
 enum ExprKind{
+  EXPR_BINARY,
   EXPR_ADD,
+  EXPR_DIV,
   EXPR_MUL,
+  EXPR_SUB,
+  EXPR_BINARY_END,
 
-  EXPR_INTEGER
+  EXPR_PRIMARY = EXPR_BINARY_END,
+  EXPR_INTEGER,
+  EXPR_PRIMARY_END = EXPR_INTEGER
 };
 
 struct Expr{
