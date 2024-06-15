@@ -1,4 +1,1 @@
-@ <stdio.hdr>
-@ "lexer.hdr"
-
-fn parseExpr(): int;
+extern fn parseExpr(): int;
