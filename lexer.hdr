@@ -6,6 +6,8 @@ enum TokenKind
   PLUS,
   ASTERISK,
   IDENTIFIER,
+  LPAREN,
+  RPAREN,
 };
 
 type TokenVal: array[12] of char;
