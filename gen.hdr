@@ -1,0 +1,4 @@
+@ <stdio.hdr>
+@ "lexer.hdr"
+
+fn getReg(): int;
