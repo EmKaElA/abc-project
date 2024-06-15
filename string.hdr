@@ -1,0 +1,1 @@
+type string: array[42] of char;

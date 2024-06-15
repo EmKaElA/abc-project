@@ -11,7 +11,7 @@ fn createBinaryExpr(kind: ExprKind, left: ->Expr, right: ->Expr): ->Expr{
   return n;
 }
 
-fn createIntegerExpr(val: u64): ->Expr{
+fn createIntegerExpr(val: string): ->Expr{
   local n: -> Expr = malloc(sizeof(*n));
   assert(n);
   n->kind = EXPR_INTEGER;
